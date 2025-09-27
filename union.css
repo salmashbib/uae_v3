@@ -1,0 +1,249 @@
+html {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+body {
+    overflow: hidden;
+    margin: 1vw;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1 auto);
+    grid-template-rows: repeat(10, 1 auto);
+    gap: 0px;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    background-color: white;
+    align-items: center;
+    padding: .5vw 0;
+    width: 100vw;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+.div4 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 4;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 6;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 7;
+}
+
+.div8 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 8;
+}
+
+.div9 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 9;
+}
+
+.div10 {
+    grid-column: span 2 / span 2;
+    grid-row-start: 10;
+    margin-top: auto;
+    background-color: white;
+    align-items: center;
+    padding: 5vw 0;
+    width: 100vw;
+}
+
+h2,
+p {
+    color: white;
+    text-align: right;
+    font-family: 'Rb';
+    font-size: 7vw;
+    margin-bottom: 0;
+    margin-top: 15px;
+    width: 96%;
+}
+
+p {
+    font-size: 4vw;
+    line-height: 1.5;
+}
+
+h2#hi {
+    font-size: 9vw;
+    font-family: 'Rb';
+    color: black;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p#hello {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    padding-right: 8px;
+    padding-bottom: 1vw;
+}
+
+.div2,
+.div4,
+.div6,
+.div8 {
+    margin: 2vw 0;
+    margin-bottom: 0;
+}
+
+a {
+    font-size: 4vw;
+    color: black;
+    text-decoration: none;
+    margin-left: 8vw;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (min-width:650px) {
+    .parent {
+        gap: 0px;
+    }
+
+    img,
+    .div2,
+    .div4,
+    .div6,
+    .div8 {
+        float: center;
+        margin-inline: 0;
+
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 4vw;
+        margin-top: 0;
+        width: 90%;
+    }
+
+    p {
+        width: 90%;
+        font-size: 2vw;
+        float: center;
+        margin-inline: 1vw;
+    }
+
+    h2#hi {
+        width: 100%;
+    }
+
+    p#hello {
+        width: 100%;
+    }
+
+    a {
+        font-size: 2vw;
+        margin-left: 22vw;
+    }
+
+    .div1 {
+        grid-column: span 2 / span 2;
+    }
+
+    .div2 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        grid-column-end: 2;
+
+    }
+
+    .div3 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        grid-column-end: 1;
+    }
+
+    .div4 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 4;
+    }
+
+    .div5 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 4;
+        grid-column-end: 1;
+    }
+
+    .div6 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 6;
+    }
+
+    .div7 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 6;
+        grid-column-end: 1;
+    }
+
+    .div8 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 2;
+        grid-row-start: 8;
+    }
+
+    .div9 {
+        grid-row: span 2 / span 2;
+        grid-column-start: 1;
+        grid-row-start: 8;
+        grid-column-end: 1;
+    }
+
+    .div10 {
+        grid-column: span 2 / span 2;
+        grid-row-start: 10;
+        height: min-content;
+        padding: 1vw;
+    }
+
+    #g { float: left;
+    }
+
+    #ig {float: left;
+    }
+
+}
